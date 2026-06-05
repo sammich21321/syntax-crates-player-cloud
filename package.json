@@ -1,0 +1,34 @@
+{
+  "name": "syntax-crates",
+  "version": "1.0.0",
+  "description": "Syntax Crates Unboxing Simulator",
+  "author": "Syntax Developer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "cloud-server": "node player-cloud-server.js",
+    "build": "set ELECTRON_BUILDER_CACHE=.electron-builder-cache&& electron-builder --win"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.syntax.crates",
+    "productName": "Syntax Crates",
+    "electronDist": "node_modules/electron/dist",
+    "files": [
+      "index.html",
+      "main.js",
+      "package.json",
+      "icon.ico"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}
