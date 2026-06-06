@@ -1,0 +1,9 @@
+name = "syntax-crates-player-cloud"
+main = "cloudflare-player-worker.js"
+compatibility_date = "2026-06-06"
+
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "PLAYERS"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
