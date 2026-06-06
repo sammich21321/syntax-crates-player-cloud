@@ -6,4 +6,4 @@ workers_dev = true
 
 [[kv_namespaces]]
 binding = "PLAYERS"
-id = "PASTE_KV_NAMESPACE_ID_HERE"
+id = "e50f203accef4fec9c2e292c4b54a348"
